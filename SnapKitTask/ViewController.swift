@@ -20,17 +20,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupViews()
+        setupUI()
+        setupConstraints()
+
+        
+    }
+    
+    func setupViews(){
         view.backgroundColor = .black
         view.addSubview(profileImage)
         view.addSubview(bigUsernameLabel)
         view.addSubview(smallUsernameLabel)
         view.addSubview(bioLabel)
         view.addSubview(verificationMarkImage)
-        
-        setupUI()
-        setupConstraints()
-
-        
     }
     
     func setupUI() {
